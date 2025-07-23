@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI AzuraCast Controller - Documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="AI-powered radio station management CLI tool for AzuraCast. Generate intelligent playlists, analyze listeners, and optimize scheduling with artificial intelligence.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="AzuraCast, AI, radio, playlist, CLI, automation, broadcasting, music">
+  <meta name="author" content="High Limit Designs">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://highlimitdesigns.github.io/ai-azuracast-controller/">
+  <meta property="og:title" content="AI AzuraCast Controller Documentation">
+  <meta property="og:description" content="AI-powered radio station management CLI tool for AzuraCast">
+  <meta property="og:image" content="https://highlimitdesigns.github.io/ai-azuracast-controller/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://highlimitdesigns.github.io/ai-azuracast-controller/">
+  <meta property="twitter:title" content="AI AzuraCast Controller Documentation">
+  <meta property="twitter:description" content="AI-powered radio station management CLI tool for AzuraCast">
+  <meta property="twitter:image" content="https://highlimitdesigns.github.io/ai-azuracast-controller/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  
+  <!-- Theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+  
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --theme-color: #007bff;
+      --theme-color-secondary: #6c757d;
+      --sidebar-width: 300px;
+    }
+    
+    .app-name-link img {
+      height: 32px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    
+    .markdown-section {
+      max-width: 1000px;
+    }
+    
+    .markdown-section h1 {
+      color: var(--theme-color);
+      border-bottom: 2px solid var(--theme-color);
+      padding-bottom: 10px;
+    }
+    
+    .markdown-section blockquote {
+      border-left: 4px solid var(--theme-color);
+      background: rgba(0, 123, 255, 0.05);
+    }
+    
+    .markdown-section code {
+      background: rgba(0, 123, 255, 0.1);
+      color: var(--theme-color);
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    
+    .markdown-section pre {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+    }
+    
+    .sidebar-nav > ul > li > a {
+      font-weight: 600;
+    }
+    
+    .github-corner:hover .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+    
+    @keyframes octocat-wave {
+      0%, 100% { transform: rotate(0) }
+      20%, 60% { transform: rotate(-25deg) }
+      40%, 80% { transform: rotate(10deg) }
+    }
+    
+    .hero-section {
+      text-align: center;
+      padding: 40px 0;
+      background: linear-gradient(135deg, #007bff 0%, #6c757d 100%);
+      color: white;
+      margin: -20px -40px 40px -40px;
+      border-radius: 0 0 20px 20px;
+    }
+    
+    .hero-section h1 {
+      color: white;
+      border: none;
+      margin-bottom: 10px;
+    }
+    
+    .hero-section p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .feature-card {
+      padding: 20px;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      background: #f8f9fa;
+    }
+    
+    .feature-card h3 {
+      color: var(--theme-color);
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  
+  <!-- GitHub Corner -->
+  <a href="https://github.com/highlimitdesigns/ai-azuracast-controller" class="github-corner" aria-label="View source on GitHub">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#007bff; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+      <path d="m0,0 0,250 250,250 0,-250 z"></path>
+      <path d="m127.5,110 c-25.4,0 -46,20.6 -46,46 0,20.3 13.2,37.5 31.5,43.5 2.3,0.4 3.1,-1 3.1,-2.2 0,-1.1 0,-4 0,-7.8 -12.8,2.8 -15.5,-6.2 -15.5,-6.2 -2.1,-5.3 -5.1,-6.7 -5.1,-6.7 -4.2,-2.9 0.3,-2.8 0.3,-2.8 4.6,0.3 7.1,4.8 7.1,4.8 4.1,7 10.8,5 13.4,3.8 0.4,-3 1.6,-5 2.9,-6.1 -10.2,-1.2 -21,-5.1 -21,-22.6 0,-5 1.8,-9.1 4.8,-12.3 -0.5,-1.2 -2.1,-5.9 0.5,-12.3 0,0 3.9,-1.2 12.8,4.7 3.7,-1 7.7,-1.6 11.7,-1.6 4,0 8,0.5 11.7,1.6 8.9,-6 12.8,-4.7 12.8,-4.7 2.6,6.4 1,11.1 0.5,12.3 3,3.2 4.8,7.3 4.8,12.3 0,17.6 -10.8,21.4 -21,22.5 1.6,1.4 3.1,4.1 3.1,8.3 0,6 0,10.8 0,12.3 0,1.2 0.8,2.6 3.1,2.2 18.3,-6.1 31.5,-23.2 31.5,-43.5 0,-25.4 -20.6,-46 -46,-46 z" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-body"></path>
+      <path d="m115,115 c0,0 -2,3 5,3 8,0 5,-3 5,-3" fill="#007bff" class="octo-arm" style="transform-origin: 130px 106px;"></path>
+    </svg>
+  </a>
+
+  <script>
+    window.$docsify = {
+      name: 'AI AzuraCast Controller',
+      repo: 'https://github.com/highlimitdesigns/ai-azuracast-controller',
+      homepage: 'README.md',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      maxLevel: 4,
+      
+      // Search
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search documentation...',
+        noData: 'No results found.',
+        depth: 6,
+        hideOtherSidebarContent: false,
+      },
+      
+      // Copy to clipboard
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied!'
+      },
+      
+      // Pagination
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      
+      // Edit on GitHub
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            var url = 'https://github.com/highlimitdesigns/ai-azuracast-controller/blob/main/docs/' + vm.route.file;
+            var editHtml = '[:memo: Edit this page on GitHub](' + url + ')\n\n';
+            return editHtml + html;
+          });
+        }
+      ],
+      
+      // Dark theme
+      darklightTheme: {
+        siteFont: 'PT Sans',
+        defaultTheme: 'light',
+        codeFontFamily: 'Roboto Mono, Monaco, courier, monospace',
+        bodyFontSize: '16px',
+        dark: {
+          accent: '#007bff',
+          toogleBackground: '#ffffff',
+          background: '#1a1a1a',
+          textColor: '#b4b4b4',
+          codeTextColor: '#ffffff',
+          codeBackgroundColor: '#2d2d2d',
+          borderColor: '#0d2538',
+          blockQuoteColor: '#858585',
+          highlightColor: '#d22778',
+          sidebarSublink: '#b4b4b4',
+          codeTypeColor: '#ffffff',
+          coverBackground: 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+          toogleImage: 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+        },
+        light: {
+          accent: '#007bff',
+          toogleBackground: '#091a28',
+          background: '#ffffff',
+          textColor: '#34495e',
+          codeTextColor: '#525252',
+          codeBackgroundColor: '#f8f8f8',
+          borderColor: 'rgba(0, 0, 0, 0.07)',
+          blockQuoteColor: '#858585',
+          highlightColor: '#d22778',
+          sidebarSublink: '#b4b4b4',
+          codeTypeColor: '#091a28',
+          coverBackground: 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+          toogleImage: 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+        }
+      }
+    }
+  </script>
+  
+  <!-- Docsify Core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  
+  <!-- Syntax Highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  
+  <!-- Analytics (placeholder) -->
+  <script>
+    // Google Analytics placeholder
+    // Replace with your tracking ID when ready
+    /*
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+    */
+  </script>
+</body>
+</html>
