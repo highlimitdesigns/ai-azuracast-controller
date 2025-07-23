@@ -7,6 +7,17 @@ An intelligent radio station management CLI tool that uses AI to analyze listene
 
 **Created by [High Limit Designs](https://highlimitdesigns.com)**
 
+## ⚠️ Experimental Software
+
+**This software is currently in the experimental phase. Use at your own risk.**
+
+We're actively developing and testing this tool. While it provides valuable functionality, please be aware that:
+- Features may change or be updated frequently
+- Some functionality may not work as expected in all environments
+- We recommend testing thoroughly in non-production environments first
+
+**Contributors are welcome!** We encourage community involvement to help improve and stabilize this tool. Please visit our [GitHub repository](https://github.com/highlimitdesigns/ai-azuracast-controller) to contribute, report issues, or suggest improvements.
+
 ## 🚀 Features
 
 - **AI-Powered Playlist Generation**: Generate intelligent song suggestions based on station genre and theme
