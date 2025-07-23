@@ -1,0 +1,73 @@
+{
+  "name": "ai-azuracast-controller",
+  "version": "1.0.0",
+  "description": "AI-powered radio station playlist generator and manager for AzuraCast",
+  "main": "src/index.js",
+  "bin": {
+    "radio": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "link": "npm link",
+    "unlink": "npm unlink",
+    "list-stations": "node src/index.js manage stations",
+    "generate": "node src/index.js generate playlist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo 'Ready to publish to NPM'",
+    "postinstall": "echo 'AI AzuraCast Controller installed successfully! Run: radio --help'"
+  },
+  "keywords": [
+    "radio",
+    "azuracast",
+    "ai",
+    "playlist",
+    "generator",
+    "cli",
+    "openai",
+    "broadcasting",
+    "music",
+    "automation",
+    "scheduling",
+    "listener-analysis"
+  ],
+  "author": {
+    "name": "High Limit Designs",
+    "email": "contact@highlimitdesigns.com",
+    "url": "https://highlimitdesigns.com"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "homepage": "https://github.com/highlimitdesigns/ai-azuracast-controller#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highlimitdesigns/ai-azuracast-controller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/highlimitdesigns/ai-azuracast-controller/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    ".env.example"
+  ],
+  "preferGlobal": true,
+  "dependencies": {
+    "axios": "^1.10.0",
+    "commander": "^14.0.0",
+    "dotenv": "^17.2.0",
+    "openai": "^5.10.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/highlimitdesigns"
+  }
+}
