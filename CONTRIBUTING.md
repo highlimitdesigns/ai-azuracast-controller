@@ -1,6 +1,6 @@
-# Contributing to AI Radio Controller
+# Contributing to AI AzuraCast Controller
 
-Thank you for your interest in contributing to AI Radio Controller! We welcome contributions from the community and are pleased to have you join us.
+Thank you for your interest in contributing to AI AzuraCast Controller! We welcome contributions from the community and are pleased to have you join us.
 
 ## 📋 Table of Contents
 
@@ -41,13 +41,13 @@ This project and everyone participating in it is governed by our Code of Conduct
 1. **Fork the repository**
    ```bash
    # Click the "Fork" button on GitHub, then clone your fork
-   git clone https://github.com/YOUR_USERNAME/ai-radio-controller.git
-   cd ai-radio-controller
+   git clone https://github.com/YOUR_USERNAME/ai-azuracast-controller.git
+   cd ai-azuracast-controller
    ```
 
 2. **Add upstream remote**
    ```bash
-   git remote add upstream https://github.com/original-owner/ai-radio-controller.git
+   git remote add upstream https://github.com/highlimitdesigns/ai-azuracast-controller.git
    ```
 
 3. **Install dependencies**

@@ -233,6 +233,14 @@ npm run generate       # Quick playlist generation
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
+### Community Guidelines
+
+- 📋 [Code of Conduct](CODE_OF_CONDUCT.md) - Our community standards
+- 🔒 [Security Policy](SECURITY.md) - How to report security issues
+- 🗺️ [Roadmap](ROADMAP.md) - Planned features and development timeline
+- 💬 [Discussions](https://github.com/highlimitdesigns/ai-azuracast-controller/discussions) - Community Q&A and ideas
+- 🐛 [Issues](https://github.com/highlimitdesigns/ai-azuracast-controller/issues) - Bug reports and feature requests
+
 ### Development Workflow
 
 1. Fork the repository
