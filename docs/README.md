@@ -6,7 +6,7 @@
 </div>
 
 [![npm version](https://badge.fury.io/js/ai-azuracast-controller.svg)](https://badge.fury.io/js/ai-azuracast-controller)
-[![License: MIT](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/highlimitdesigns/ai-azuracast-controller/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/highlimitdesigns/ai-azuracast-controller/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/highlimitdesigns/ai-azuracast-controller)](https://github.com/highlimitdesigns/ai-azuracast-controller/issues)
 [![GitHub stars](https://img.shields.io/github/stars/highlimitdesigns/ai-azuracast-controller)](https://github.com/highlimitdesigns/ai-azuracast-controller/stargazers)
 
