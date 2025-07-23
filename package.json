@@ -1,6 +1,6 @@
 {
   "name": "ai-azuracast-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered radio station playlist generator and manager for AzuraCast",
   "main": "src/index.js",
   "bin": {
