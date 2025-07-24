@@ -1,7 +1,7 @@
 # AI AzuraCast Controller
 
 [![npm version](https://badge.fury.io/js/ai-azuracast-controller.svg)](https://badge.fury.io/js/ai-azuracast-controller)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/highlimitdesigns/ai-azuracast-controller/blob/main/LICENSE)
 
 An intelligent radio station management CLI tool that uses AI to analyze listener patterns and generate optimized scheduling recommendations for AzuraCast radio stations.
 
